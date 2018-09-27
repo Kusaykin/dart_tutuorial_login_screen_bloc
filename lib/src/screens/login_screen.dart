@@ -23,6 +23,7 @@ class LoginScreen extends StatelessWidget {
         hintText: 'you@example.com',
         labelText: 'Email Address'
       ),
+      onChanged: (String value) {},
     );
   }
 
