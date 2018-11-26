@@ -5,6 +5,8 @@
 .pub/
 
 build/
+*.iml
 
 .flutter-plugins
 .idea/
+pubspec.lock
