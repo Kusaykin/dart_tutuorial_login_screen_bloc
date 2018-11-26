@@ -11,16 +11,16 @@ class LoginScreen extends StatelessWidget {
       margin: EdgeInsets.all(20.0),
       child: Column(
         children: <Widget>[
-          emailField(bloc),
-          passwordFeald(bloc),
+          _emailField(bloc),
+          _passwordFeald(bloc),
           Container(margin: EdgeInsets.only(top: 25.0)),
-          submitButton(bloc)
+          _submitButton(bloc)
         ],
       ),
     );
   }
 
-  Widget emailField(Bloc bloc) {
+  Widget _emailField(Bloc bloc) {
     return StreamBuilder(
       stream: bloc.email,
       builder: (context, snapshot) {
@@ -37,7 +37,7 @@ class LoginScreen extends StatelessWidget {
     );
   }
 
-  Widget passwordFeald(Bloc bloc) {
+  Widget _passwordFeald(Bloc bloc) {
     return StreamBuilder(
       stream: bloc.password,
       builder: (context, snapshot) {
@@ -54,7 +54,7 @@ class LoginScreen extends StatelessWidget {
     );
   }
 
-  Widget submitButton(Bloc bloc) {
+  Widget _submitButton(Bloc bloc) {
     return StreamBuilder(
       stream: bloc.submitValid,
       builder: (context, snapshot) {
